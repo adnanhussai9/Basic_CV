@@ -11,5 +11,11 @@ h1{
     border-radius: 50%;
 }
 button{
-    background-color:#f9004d
+    background-color:#f9004d;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: transform .4s;
+}
+button:hover{
+    transform: scale(1.05);
 }
