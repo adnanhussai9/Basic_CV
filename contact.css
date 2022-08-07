@@ -1,0 +1,4 @@
+#grad {
+    background-image: linear-gradient(to right, #EA8D8D ,  #A890FE);
+    background: radial-gradient(circle at 10% 20%, rgb(255, 19, 120) 0%, rgb(0, 0, 0) 90.5%);
+  }
