@@ -7,9 +7,15 @@ h1{
 }
 
 .img{
-    border: 2px solid white;
+    border: 3px solid white;
     border-radius: 50%;
+    border-color: #00d5ff;
+    transition: transform .9s;
 }
+.img:hover{
+    transform: scale(1.1);
+}
+
 button{
     background-color:#f9004d;
     border-radius: 8px;
@@ -24,14 +30,28 @@ button:hover{
 .name{
     font-size: 42px;
     font-family: Arial Black, Gadget, sans-serif;
-    background-image: -webkit-linear-gradient(left, #f00, #ff2b00, #f50, #ff8000, #fa0, #ffd500, #ff0, #d4ff00, #af0, #80ff00, #5f0, #2bff00, #0f0, #00ff2a, #0f5, #00ff80, #0fa, #00ffd5, #0ff, #00d5ff, #0af, #0080ff, #05f, #002aff, #00f, #2b00ff, #50f, #8000ff, #a0f, #d400ff, #f0f, #ff00d4, #f0a, #ff0080, #f05, #ff002b, #f00);
+    background-image: -webkit-linear-gradient(left, #f9004d, #ff2b00, #f50, #ff8000, #fa0, #ffd500, #ff0, #d4ff00, #af0, #80ff00, #5f0, #2bff00, #0f0, #00ff2a, #0f5, #00ff80, #0fa, #00ffd5, #0ff, #00d5ff, #0af, #0080ff, #05f, #002aff, #00f, #2b00ff, #50f, #8000ff, #a0f, #d400ff, #f0f, #ff00d4, #f0a, #ff0080, #f05, #ff002b, #f00);
     animation: animatedBackground_a 5s linear infinite alternate;
     -webkit-background-clip: text;
     -webkit-text-fill-color: #0000;
     background-clip: text;
+    transition: transform .9s;
 }
 
 @keyframes animatedBackground_a {
     0% { background-position: 0 0 }
     100% { background-position: -500px 0 }
+}
+.name:hover{
+    transform: scale(1.05);
+}
+.box{
+    transition: transform .4s;
+}
+.box:hover{
+    transform: scale(1.1);
+}
+
+.data:hover{
+    color: #0af;
 }
